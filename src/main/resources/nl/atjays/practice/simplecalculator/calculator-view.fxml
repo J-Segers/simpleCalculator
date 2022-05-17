@@ -5,105 +5,105 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.control.Button?>
 <GridPane fx:controller="nl.atjays.practice.simplecalculator.CalculatorController"
-          xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="0" vgap="0">
+          xmlns:fx="http://javafx.com/fxml" alignment="CENTER">
 
-    <Label fx:id="result" prefWidth="320" text="0" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="4" alignment="BASELINE_RIGHT">
+    <Label fx:id="resultLabel" prefWidth="320" text="0" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="4" alignment="BASELINE_RIGHT">
         <font>
             <Font name="Arial Black bold" size="40" />
         </font>
     </Label>
 
-    <Label fx:id="input" prefWidth="320" text="0" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="4" alignment="BASELINE_RIGHT">
+    <Label fx:id="inputLabel" prefWidth="320" text="0" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="4" alignment="BASELINE_RIGHT">
         <font>
             <Font name="Arial Black bold" size="20" />
         </font>
     </Label>
 
-    <Button prefWidth="80" prefHeight="80" text="C" GridPane.rowIndex="2" GridPane.columnIndex="0">
+    <Button prefWidth="80" prefHeight="80" text="C" GridPane.rowIndex="2" GridPane.columnIndex="0" onAction="#onCButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
     </Button>
-    <Button prefWidth="80" prefHeight="80" text="/" GridPane.rowIndex="2" GridPane.columnIndex="1">
+    <Button prefWidth="80" prefHeight="80" text="/" GridPane.rowIndex="2" GridPane.columnIndex="1" onAction="#onDivideButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
     </Button>
-    <Button prefWidth="80" prefHeight="80" text="*" GridPane.rowIndex="2" GridPane.columnIndex="2">
+    <Button prefWidth="80" prefHeight="80" text="*" GridPane.rowIndex="2" GridPane.columnIndex="2" onAction="#onMultiplyButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
     </Button>
-    <Button prefWidth="80" prefHeight="80" text="-" GridPane.rowIndex="2" GridPane.columnIndex="3">
-        <font>
-            <Font name="Arial Black bold" size="32" />
-        </font>
-    </Button>
-
-    <Button prefWidth="80" prefHeight="80" text="7" GridPane.rowIndex="3" GridPane.columnIndex="0">
-        <font>
-            <Font name="Arial Black bold" size="32" />
-        </font>
-    </Button>
-    <Button prefWidth="80" prefHeight="80" text="8" GridPane.rowIndex="3" GridPane.columnIndex="1">
-        <font>
-            <Font name="Arial Black bold" size="32" />
-        </font>
-    </Button>
-    <Button prefWidth="80" prefHeight="80" text="9" GridPane.rowIndex="3" GridPane.columnIndex="2">
-        <font>
-            <Font name="Arial Black bold" size="32" />
-        </font>
-    </Button>
-    <Button prefWidth="80" prefHeight="160" text="+" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.columnIndex="3">
+    <Button prefWidth="80" prefHeight="80" text="-" GridPane.rowIndex="2" GridPane.columnIndex="3" onAction="#onMinButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
     </Button>
 
-    <Button prefWidth="80" prefHeight="80" text="4" GridPane.rowIndex="4" GridPane.columnIndex="0">
+    <Button prefWidth="80" prefHeight="80" text="7" GridPane.rowIndex="3" GridPane.columnIndex="0" onAction="#onSevenButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
     </Button>
-    <Button prefWidth="80" prefHeight="80" text="5" GridPane.rowIndex="4" GridPane.columnIndex="1">
+    <Button prefWidth="80" prefHeight="80" text="8" GridPane.rowIndex="3" GridPane.columnIndex="1" onAction="#onEightButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
     </Button>
-    <Button prefWidth="80" prefHeight="80" text="6" GridPane.rowIndex="4" GridPane.columnIndex="2">
+    <Button prefWidth="80" prefHeight="80" text="9" GridPane.rowIndex="3" GridPane.columnIndex="2" onAction="#onNineButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
     </Button>
-
-    <Button prefWidth="80" prefHeight="80" text="1" GridPane.rowIndex="5" GridPane.columnIndex="0">
-        <font>
-            <Font name="Arial Black bold" size="32" />
-        </font>
-    </Button>
-    <Button prefWidth="80" prefHeight="80" text="2" GridPane.rowIndex="5" GridPane.columnIndex="1">
-        <font>
-            <Font name="Arial Black bold" size="32" />
-        </font>
-    </Button>
-    <Button prefWidth="80" prefHeight="80" text="3" GridPane.rowIndex="5" GridPane.columnIndex="2">
-        <font>
-            <Font name="Arial Black bold" size="32" />
-        </font>
-    </Button>
-    <Button prefWidth="80" prefHeight="160" text="=" GridPane.rowIndex="5" GridPane.rowSpan="2" GridPane.columnIndex="3">
+    <Button prefWidth="80" prefHeight="160" text="+" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.columnIndex="3" onAction="#onPlusButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
     </Button>
 
-    <Button prefWidth="160" prefHeight="80" text="0" GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="2">
+    <Button prefWidth="80" prefHeight="80" text="4" GridPane.rowIndex="4" GridPane.columnIndex="0" onAction="#onFourButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
     </Button>
-    <Button prefWidth="80" prefHeight="80" text="CE" GridPane.rowIndex="6" GridPane.columnIndex="2">
+    <Button prefWidth="80" prefHeight="80" text="5" GridPane.rowIndex="4" GridPane.columnIndex="1" onAction="#onFiveButtonClick">
+        <font>
+            <Font name="Arial Black bold" size="32" />
+        </font>
+    </Button>
+    <Button prefWidth="80" prefHeight="80" text="6" GridPane.rowIndex="4" GridPane.columnIndex="2" onAction="#onSixButtonClick">
+        <font>
+            <Font name="Arial Black bold" size="32" />
+        </font>
+    </Button>
+
+    <Button prefWidth="80" prefHeight="80" text="1" GridPane.rowIndex="5" GridPane.columnIndex="0" onAction="#onOneButtonClick">
+        <font>
+            <Font name="Arial Black bold" size="32" />
+        </font>
+    </Button>
+    <Button prefWidth="80" prefHeight="80" text="2" GridPane.rowIndex="5" GridPane.columnIndex="1" onAction="#onTwoButtonClick">
+        <font>
+            <Font name="Arial Black bold" size="32" />
+        </font>
+    </Button>
+    <Button prefWidth="80" prefHeight="80" text="3" GridPane.rowIndex="5" GridPane.columnIndex="2" onAction="#onThreeButtonClick">
+        <font>
+            <Font name="Arial Black bold" size="32" />
+        </font>
+    </Button>
+    <Button prefWidth="80" prefHeight="160" text="=" GridPane.rowIndex="5" GridPane.rowSpan="2" GridPane.columnIndex="3" onAction="#onResultButtonClick">
+        <font>
+            <Font name="Arial Black bold" size="32" />
+        </font>
+    </Button>
+
+    <Button prefWidth="160" prefHeight="80" text="0" GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="2" onAction="#onZeroButtonClick">
+        <font>
+            <Font name="Arial Black bold" size="32" />
+        </font>
+    </Button>
+    <Button prefWidth="80" prefHeight="80" text="CE" GridPane.rowIndex="6" GridPane.columnIndex="2" onAction="#onCEButtonClick">
         <font>
             <Font name="Arial Black bold" size="32" />
         </font>
